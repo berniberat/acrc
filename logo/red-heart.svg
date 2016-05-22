@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="640"
+   height="480"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="red-heart.svg"
+   inkscape:export-filename="C:\proveweb\githubACRC\logo\logo00.png"
+   inkscape:export-xdpi="71.821838"
+   inkscape:export-ydpi="71.821838">
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="645"
+     inkscape:window-height="487"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="0.446875"
+     inkscape:cx="320"
+     inkscape:cy="160.55944"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title4">gray heart with red outline</title>
+  <metadata
+     id="metadata3547">image/svg+xml<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title>gray heart with red outline</dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     id="g7"
+     inkscape:export-filename="C:\proveweb\cardiotest\logo00.png"
+     inkscape:export-xdpi="35.900002"
+     inkscape:export-ydpi="35.900002"
+     style="fill:#e40f1b;fill-opacity:1;stroke:#e40f1b;stroke-opacity:1">
+    <title
+       id="title9">Layer 1</title>
+    <g
+       id="layer1"
+       style="fill:#e40f1b;fill-opacity:1;stroke:#e40f1b;stroke-opacity:1">
+      <path
+         d="m211.619003,15.642c-137.446907,-2.4711 -264.638405,212.481001 105.92601,435.341002c0.405975,-0.730988 1.968994,-0.730988 2.375,0c382.517975,-230.048996 234.665009,-451.640422 92.625977,-434.390902c-55.372986,6.724501 -81.503998,37.456499 -93.813995,63.888002c-12.30899,-26.431503 -38.440002,-57.163502 -93.812988,-63.888002c-4.438004,-0.539301 -8.866013,-0.8702 -13.300003,-0.95l0,-0.0001z"
+         id="path2361"
+         stroke-miterlimit="4"
+         style="fill:#e40f1b;fill-opacity:1;stroke:#e40f1b;stroke-opacity:1"
+         stroke-linejoin="round"
+         stroke-width="12"
+         stroke="#ff0000"
+         fill-rule="evenodd"
+         fill="#ffffff" />
+    </g>
+  </g>
+  <g
+     inkscape:export-ydpi="35.900002"
+     inkscape:export-xdpi="35.900002"
+     inkscape:export-filename="C:\proveweb\cardiotest\logo00.png"
+     id="g2986"
+     style="stroke:none"
+     transform="matrix(0.96915999,0,0,0.96915999,9.8298295,9.4327976)">
+    <title
+       id="title2988">Layer 1</title>
+    <g
+       id="g2990"
+       style="stroke:none">
+      <path
+         stroke-miterlimit="4"
+         id="path2992"
+         d="M 211.619,15.642 C 74.172096,13.1709 -53.019402,228.123 317.54501,450.983 c 0.40598,-0.73099 1.969,-0.73099 2.375,0 C 702.43799,220.93401 554.58502,-0.65742 412.54599,16.5921 357.173,23.316601 331.04199,54.048599 318.73199,80.480102 306.423,54.048599 280.29199,23.3166 224.91901,16.5921 220.481,16.052799 216.05299,15.7219 211.619,15.6421 l 0,-10e-5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:none"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

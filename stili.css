@@ -1,58 +1,174 @@
-html{
-	background-image: url("img/back.jpg");
-	background-repeat: repeat;
+body{
+    background-color: #CCC;
+    background-image: url("img/back_blue3.jpg");
+    background-position: left bottom;
+    background-size: cover;
+    margin:0; text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 a{
 	text-decoration: none;
 	outline: 0;
 }
-	
+
 main{
-	position: relative;
-	margin:auto;
-	margin-bottom: 10px;
-	top:0px;	
-	max-width:900px;
-	min-width: 500px;
-   height:	auto;
-   border: 1px solid #999;
-   box-shadow: 0 0 5px #333333;
-   background-color: white;
-   padding-bottom: 50px;
+    position: relative;
+    margin: 2.5% auto;
+	top:0;
+    width: 95%;
+	max-width: 1000px;
+	min-width: 200px;
+    height:	auto;
+    border: 0px solid #999;
+    box-shadow: 0 0 21px 3px #FFFFFF;
+    background-color: white;
+    padding-bottom: 5px;
 }
 
-#img_logo {
-	position: relative;
-	margin:auto;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	max-width: 900px;
-	height: 200px;
-	background-image: url(img/asd.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
+header{
+border: 0px solid black;
+display: inline-block;
+
+width: 100%;
+margin: 3% auto;
+position: relative;
 }
 
-.btn_menu_index {
+#logoBox{
+border: 0px solid blue;
+display: inline-block;
+
+width: 100%;
+max-width: 800;
+margin: 0 auto;
+position: relative;
+NObackground-color: yellow;
+}
+#logoBox:before {
+    padding-bottom: 33%; /* aspect ratio! */
+    content: ""; float: left;
+}
+#logoBox:after {
+    /* clearfix */
+    content: ""; display: table; clear: both;
+}
+
+
+#logoHearth{
+text-align: left;
+border: 0px solid black;
+display: inline-block;
+width: 35%;
+left:3%; 
+top:3%;
+margin: 0 0 0 0;
+position: absolute;
+}
+#logoHearth:before {
+    padding-bottom: 89%; /* aspect ratio! */
+    content: ""; float: left;
+}
+#logoHearth:after {
+    /* clearfix */
+    content: ""; display: table; clear: both;
+}
+#logotitle{
+  position: absolute;
+  width:59%;
+  right: 3%;
+  top: 15%;
+}
+
+.logopiece{
+position: absolute;
+transform-origin-x: 50%;
+transform-origin-y: 50%;
+}
+
+#headerTop{
+  position: fixed;
+  width:100%;
+  NOborder: 2px solid yellow;
+  margin: 0px;
+}
+
+#subsubtitle{
+  font-family: 'Catamaran', sans-serif;
+  text-align: center;
+  font-size: 1.65em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #000;
+  bottom: 0%;
+  bottom: 0%;
+  margin: 10px auto;
+}
+@media only screen and (max-width: 620px) {
+
+   #subsubtitle { font-size: 0.8em; }
+
+}
+nav{
+  float: left;
+  width: 60%;
+  background-color: light-gray;
+}
+aside{
+  float: right;
+  width: 40%;
+  background-color: light-yellow;
+}
+#newsBox{
+  border: 1px solid blue;
+  width: 100%;
+  margin:10px auto;
+}
+
+@media only screen and (max-width: 620px) {
+/* one column for small screens */
+aside{ clear: both; }
+nav{ width: 100%;}
+aside{width: 100%;}
+}
+footer:before{
+  clear: both;
+  position: relative;
+  padding: 10px;
+  border: 1px solid black;
+}
+footer{
+  border-top: 1px solid #aba;
+  clear: both;
+  position: relative;
+  width:90%;
+  margin: 130px auto 10px auto;
+  padding-top: 10px;
+  bottom: 0%;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.login_btn{
 	position: relative;
-	margin:auto;
-	margin-bottom: 15px;
-	max-width: 500px;
-	min-width: 410px;
-	height: auto;
-	border: 1px solid #006F37;
+	margin: 15px auto;
+	max-width: 300px;
+    height: 30px;
+	width: 80%;
+	border: 1px solid #007F37;
 	text-align: center;
+    font-weight: 700;
+    border-radius: 20px;
 	font-size:20px; 
-	padding: 20px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight: lighter;
-	color: #006F37;
+	padding: 15px;
+	color: #007F37;
 }
-.btn_menu_index:hover{
+.login_btn:hover{
 	cursor:pointer;
-	background-color: #006F37;
-	border: 1px solid #006F37;
+	background-color: #007F37;
+	border: 1px solid #007F37;
 	color: white;
 }
 
@@ -126,81 +242,3 @@ main{
 	font-weight: bold;
 }
 
-@media screen and (max-width: 550px) /* Mobile */ {
-	html{
-		background-image: none;
-	}
-
-   main{
-		position: relative;
-		margin:auto;
-		margin-bottom: 10px;
-		top:0px;	
-		max-width:500px;
-		min-width: 250px;
-		height: auto;
-		border:0px;
-  	   box-shadow: 0 0 0px #333333;
-   	background-color: white;
-   	padding-bottom: 50px;
-  }
-  
-  #img_logo {
-		position: relative;
-		margin:auto;
-		margin-bottom: 25px;
-		margin-top: 25px;
-		max-width:500px;
-		min-width: 200px;
-		height: 150px;
-		background-image: url(img/asd.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-	
-	.btn_menu_index {
-		position: relative;
-		margin:auto;
-		margin-bottom: 15px;
-		max-width:400px;
-		min-width: 110px;
-		height: auto;
-		border: 1px solid #006F37;
-		text-align: center;
-		font-size:15px; 
-		padding: 20px;
-		font-family:Arial, Helvetica, sans-serif;
-		font-weight: lighter;
-		color: #006F37;
-	}
-	
-	.input_container{
-		position: relative;
-		margin: auto;
-		max-width: 200px;
-		min-width: 250px;
-		height: auto;
-	}
-
-
-	.inputCod {
-		position: relative;
-		margin:auto;
-		background-color:white;
-		resize: none;
-		border:solid 1px #006F37;
-		outline:none;
-		max-width: 500px;
-		min-width: 250px;
-		font: medium -moz-fixed;
-  	   font: -webkit-small-control;
-  	 	font: 14px sans-serif;
-		line-height: 140%;
-		color: #333;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		padding-left: 5px;
-		padding-right: 5px;
-	}		
-}
