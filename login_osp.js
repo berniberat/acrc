@@ -4,11 +4,14 @@ $(document).ready(function(){
         error = "";
         NProgress.start();
         var codice = $.trim($("#codice").val());
-        var logType = "medici";
-        var pass = "no";
+        var logType = "ospiti";
+        var pass = $.trim($("#pass").val());
+        if (pass.length < 0 || pass == ""){
+       	 error = "Inserisci la password!";
+   	  }
         if (codice.length < 0 || codice == ""){
-        error = "Inserisci il codice personale!";
-    }
+       	 error = "Inserisci il tuo nick-name!";
+   	  }
     if (error == "") {
             $.ajax({
             type: 'POST',
@@ -19,7 +22,7 @@ $(document).ready(function(){
             success: function(result) {
                 if (result === "Login effettuato con successo!") {
                     NProgress.done();
-                    window.location.replace("profilo-med.php");
+                    window.location.replace("profilo-osp.php");
                 }else {
                     if (result === "notfinded") {
                         result = "I dati inseriti risultano essere sbagliati!";

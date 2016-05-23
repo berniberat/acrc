@@ -2,14 +2,14 @@
 	session_start();
 	if($_SERVER["HTTPS"] != "on"){
     	header("Location: https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]);
-   	 exit();
+      exit();
 	}
 	include ('engine.php');
 	$ip_osp = $_SERVER['REMOTE_ADDR'];
 	$browser_osp = $_SERVER['HTTP_USER_AGENT'];
 	$ora_accesso = date('H:i:s');
 	$dat_accesso = date('d-m-Y');
-	$pagina_osp = "login_med.php";
+	$pagina_osp = "login_osp.php";
 	
 	$rifOspite = new engine($ip_osp,$browser_osp,$ora_accesso,$dat_accesso,$pagina_osp);
 	/////////////////////////////////////
@@ -24,5 +24,5 @@
 	if($risConnessione){
 		$rifOspite->insertOspite();
 	}
-    readfile("login_med.html");
+    readfile("login_osp.html");
 ?>

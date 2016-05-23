@@ -4,7 +4,7 @@ $(document).ready(function(){
         error = "";
         NProgress.start();
         var codice = $.trim($("#codice").val());
-        var logType = "medici";
+        var logType = "cardiochirurghi";
         var pass = "no";
         if (codice.length < 0 || codice == ""){
         error = "Inserisci il codice personale!";
@@ -19,7 +19,7 @@ $(document).ready(function(){
             success: function(result) {
                 if (result === "Login effettuato con successo!") {
                     NProgress.done();
-                    window.location.replace("profilo-med.php");
+                    window.location.replace("profilo-card.php");
                 }else {
                     if (result === "notfinded") {
                         result = "I dati inseriti risultano essere sbagliati!";
