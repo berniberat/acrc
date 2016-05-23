@@ -16,7 +16,7 @@ a{
 
 main{
     position: relative;
-    margin: 2.5% auto;
+    margin: 2.5% auto 200px auto;
 	top:0;
     width: 95%;
 	max-width: 1000px;
@@ -26,6 +26,7 @@ main{
     box-shadow: 0 0 21px 3px #FFFFFF;
     background-color: white;
     padding-bottom: 5px;
+    
 }
 
 header{
@@ -36,6 +37,16 @@ width: 100%;
 margin: 3% auto 0 auto;
 position: relative;
 }
+
+.socialBox{
+    float:right;
+    width: 50%;
+    NObackground-color: yellow;
+    max-width: 300px;
+    margin: 0 auto;
+}
+#social{width:50%;}
+
 
 h1{
   inline:block;
@@ -144,16 +155,17 @@ aside{
   margin-bottom:0px;
   font-style: italic;
   font-weight: 100;
-
 }
-.socialBox{
-    float:right;
-    width: 50%;
-    NObackground-color: yellow;
-    max-width: 300px;
-    margin: 0 auto;
+#newsBox > .etc{
+  font-size: 20px;
+  NOfont-style: italic;
+  font-weight: 100;
+  float: right;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  text-align: right;
 }
-#social{width:50%;}
 
 .text {
   text-align: left;
@@ -213,7 +225,7 @@ footer{
 .news {
   display:block;
   clear: both;
-  margin: 5px auto 15px auto;
+  margin: 10px auto 10px auto;
   background-color: #EEE;
   border-radius: 8px;
   NOborder: 2px solid blue;
@@ -254,7 +266,6 @@ footer{
   font-size: 15px;
   margin: 0px;
 }
-
 .news > .date{
   color: gray;
   display:inline; 
@@ -262,6 +273,7 @@ footer{
   float: right;
   font-size: 15px;
 }
+
 @media only screen and (max-width: 620px) {
 /* one column for small screens */
 aside{ clear: both; }
