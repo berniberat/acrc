@@ -21,8 +21,9 @@
   	fclose($fp);
 	/////////////////////////////////////
 	$risConnessione = $rifOspite->connessioneDB();
-	if($risConnessione){
+	if($risConnessione)
+    {
 		$rifOspite->insertOspite();
-        readfile("main_index.html");
     }
+    readfile("./main_index.html");
 ?>

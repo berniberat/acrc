@@ -23,6 +23,6 @@
 	$risConnessione = $rifOspite->connessioneDB();
 	if($risConnessione){
 		$rifOspite->insertOspite();
-        readfile("login_med.html");
 	}
+    readfile("login_med.html");
 ?>

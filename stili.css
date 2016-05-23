@@ -36,6 +36,7 @@ NObackground-color: yellow;
 width: 100%;
 margin: 3% auto 0 auto;
 position: relative;
+
 }
 
 .socialBox{
@@ -43,7 +44,7 @@ position: relative;
     width: 50%;
     NObackground-color: yellow;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0 auto;  
 }
 #social{width:50%;}
 
@@ -51,9 +52,6 @@ position: relative;
 h1{
   inline:block;
   clear: both;
-}
-.text{
-   size: 20px;
 }
 
 #logoBox{
@@ -169,7 +167,7 @@ aside{
 
 .text {
   text-align: left;
-  margin: 8%;
+  margin: 0 8%;
 }
 .text> h1 {
   clear: both;
@@ -177,10 +175,14 @@ aside{
   width:100%;
   margin: 80px auto 10px auto;
   padding-top: 20px;
-  
+  font-size: 40px;
+  font-weight: 400;
+
 }
 .back {
-  font-size: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  NObackground-color: yellow;
 }
 
 footer:before{
@@ -283,48 +285,40 @@ aside{width: 80%;}
 .login_btn{ font-size:18px; padding: 12px;height: 24px; }
 }
 
-.input_container{
+form{  
 	position: relative;
-	margin: auto;
-	max-width: 350px;
-	min-width: 250px;
-	height: auto;
+	margin: 40px auto 0px auto;
+	width: 100%;
+    text-align: center;
 }
 
 .inputCod {
-	position: relative;
-	margin:auto;
 	background-color:white;
-	resize: none;
-	border:solid 1px #006F37;
-	outline:none;
-	max-width: 700px;
-	min-width: 200px;
-	font: medium -moz-fixed;
-   font: -webkit-small-control;
-   font: 14px sans-serif;
-	line-height: 140%;
+	width: 300px;
 	color: #333;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 5px;
-	padding-right: 5px;
 }
-
+.bottSend , .inputCod {
+    margin:5px 0;
+    padding: 10;
+	border:solid 1px #4CAF50;
+	outline:none;
+    height: 100px;
+    border-radius: 8px;
+    font-size:40px;
+	outline:0;
+    text-align: center;
+}
 .bottSend{
 	background-color: #4CAF50;
 	color:#FFFFFF;
-	float: right;
-	margin-top: 7px;
-	margin-bottom: 10px;
 	cursor:pointer;
-	font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
-	font-size:15px;
-	font-weight:bold;
-	padding:10px;
-	border:solid 1px #006F37;
-	outline:0;
 }
+
+::-webkit-input-placeholder {
+    font-size:18px;
+}
+
+
 .bottSend:hover{
 	opacity:0.8;
 }
