@@ -305,10 +305,13 @@ form{
 	outline:none;
     height: 100px;
     border-radius: 8px;
-    font-size:40px;
+    font-size:28px;
 	outline:0;
     text-align: center;
 }
+@media only screen and (max-width: 620px) {
+.inputCod { font-size:14px; }
+}	
 .bottSend{
 	background-color: #4CAF50;
 	color:#FFFFFF;
