@@ -31,10 +31,18 @@ main{
 header{
 border: 0px solid black;
 display: inline-block;
-
+NObackground-color: yellow;
 width: 100%;
-margin: 3% auto;
+margin: 3% auto 0 auto;
 position: relative;
+}
+
+h1{
+  inline:block;
+  clear: both;
+}
+.text{
+   size: 20px;
 }
 
 #logoBox{
@@ -112,27 +120,57 @@ transform-origin-y: 50%;
 
 }
 nav{
-  float: left;
-  width: 60%;
-  background-color: light-gray;
+clear: both;
+float: left;
+width: 50%;
+margin-top: 3%;
 }
 aside{
   float: right;
-  width: 40%;
-  background-color: light-yellow;
+  width: 35%;
+  margin: 5px 10% 0 5% ;
+  NObackground-color: light-yellow;
+  text-align: left;
+  
 }
 #newsBox{
-  border: 1px solid blue;
+  NOborder: 1px solid blue;
   width: 100%;
   margin:10px auto;
 }
 
-@media only screen and (max-width: 620px) {
-/* one column for small screens */
-aside{ clear: both; }
-nav{ width: 100%;}
-aside{width: 100%;}
+#newsBox > h3 {
+  font-size: 25px;
+  margin-bottom:0px;
+  font-style: italic;
+  font-weight: 100;
+
 }
+.socialBox{
+    float:right;
+    width: 50%;
+    NObackground-color: yellow;
+    max-width: 300px;
+    margin: 0 auto;
+}
+#social{width:50%;}
+
+.text {
+  text-align: left;
+  margin: 8%;
+}
+.text> h1 {
+  clear: both;
+  border-top: 1px solid #aba;
+  width:100%;
+  margin: 80px auto 10px auto;
+  padding-top: 20px;
+  
+}
+.back {
+  font-size: 20px;
+}
+
 footer:before{
   clear: both;
   position: relative;
@@ -141,10 +179,10 @@ footer:before{
 }
 footer{
   border-top: 1px solid #aba;
+  width:90%;
   clear: both;
   position: relative;
-  width:90%;
-  margin: 130px auto 10px auto;
+  margin: 10px auto 10px auto;
   padding-top: 10px;
   bottom: 0%;
   letter-spacing: 3px;
@@ -157,19 +195,80 @@ footer{
 	max-width: 300px;
     height: 30px;
 	width: 80%;
-	border: 1px solid #007F37;
+	border: 2px solid #007F37;
+    //background-color: #b0fFc7;
 	text-align: center;
     font-weight: 700;
-    border-radius: 20px;
-	font-size:20px; 
+    border-radius: 8px;
+	font-size:22px; 
 	padding: 15px;
 	color: #007F37;
 }
 .login_btn:hover{
 	cursor:pointer;
 	background-color: #007F37;
-	border: 1px solid #007F37;
+	border: 2px solid #007F37;
 	color: white;
+}
+.news {
+  display:block;
+  clear: both;
+  margin: 5px auto 15px auto;
+  background-color: #EEE;
+  border-radius: 8px;
+  NOborder: 2px solid blue;
+  padding: 10px;
+}
+.news > h4{
+  color: red;
+  display:inline;
+  text-align: left;
+  clear: both;
+  font-size: 20px;
+}
+.thumb{
+  float: left;
+   clear: both;
+  display:block;
+  float: left;
+  width: 28%;
+  border-radius: 15px;
+  margin-right:8px;
+  border: 1px solid gray;
+}
+.news > .text{
+  margin: 5px;
+  line-height: 130%;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+.news > .spacer{
+  clear: both;
+}
+.news > .more{
+  float: right;
+  text-align:right;
+  margin-left:5px;
+  clear: both;
+  display: block;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.news > .date{
+  color: gray;
+  display:inline; 
+  clear: both;
+  float: right;
+  font-size: 15px;
+}
+@media only screen and (max-width: 620px) {
+/* one column for small screens */
+aside{ clear: both; }
+nav{ width: 100%;}
+aside{width: 80%;}
+.socialBox{ width: 100%; clear: both; float: none; }
+.login_btn{ font-size:18px; padding: 12px;height: 24px; }
 }
 
 .input_container{
