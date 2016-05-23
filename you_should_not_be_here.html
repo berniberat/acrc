@@ -11,10 +11,18 @@ body{
 }
 
 h1{font-size: 150px; padding:0px 0; text-align: center;}
-h2{font-size: 100px; padding:0px 0;}
 p{font-size: 80px; margin: 10px;}
 span{font-size: 100px; color: red; font-weight:700;}
-img{margin-left:10px; vertical-align: -30%;}
+img{margin-left:10px; vertical-align: -30%; width:100px;}
+
+@media only screen and (max-width: 620px) {
+/* one column for small screens */
+h1{ font-size: 75px; }
+p{ font-size:40;}
+span{ font-size:50;}
+img{ width: 50px;}
+}
+
 
 </style>
 </head>
@@ -23,6 +31,6 @@ img{margin-left:10px; vertical-align: -30%;}
 <p>Hello, Visitor!</p>
 <p>This will be the web page of the <span>ACRC</span> association, but it is not ready yet.</p>
 <p>(how did you find this link anyway?)</p>
-<p>If you want, go ahead and test it <a href="home.php"><img width=100 src="img/hand_drawn_arrow.svg"></a></p>
+<p>If you want, go ahead and test it <a href="index.php"><img src="img/hand_drawn_arrow.svg"></a></p>
 </body>
 </html>
